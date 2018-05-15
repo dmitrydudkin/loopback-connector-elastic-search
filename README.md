@@ -115,10 +115,10 @@ npm install loopback-connector-es --save --save-exact
           {
             "name": "UserModel",
             "properties": {
-                "realm": {"type": "string", "index" : "not_analyzed" },
-                "username": {"type": "string", "index" : "not_analyzed" },
-                "password": {"type": "string", "index" : "not_analyzed" },
-                "email": {"type": "string", "analyzer" : "email" }
+                "realm": {"type": "text", "index" : "not_analyzed" },
+                "username": {"type": "text", "index" : "not_analyzed" },
+                "password": {"type": "text", "index" : "not_analyzed" },
+                "email": {"type": "text", "analyzer" : "email" }
             }
           },
           {
@@ -126,10 +126,10 @@ npm install loopback-connector-es --save --save-exact
             "index": <useSomeOtherIndex>,
             "type": <overrideTypeName>,
             "properties": {
-                "realm": {"type": "string", "index" : "not_analyzed" },
-                "username": {"type": "string", "index" : "not_analyzed" },
-                "password": {"type": "string", "index" : "not_analyzed" },
-                "email": {"type": "string", "analyzer" : "email" }
+                "realm": {"type": "text", "index" : "not_analyzed" },
+                "username": {"type": "text", "index" : "not_analyzed" },
+                "password": {"type": "text", "index" : "not_analyzed" },
+                "email": {"type": "text", "analyzer" : "email" }
             }
           }
         ],
